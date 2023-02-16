@@ -1,0 +1,231 @@
+* {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* TILL FÖR ATT MODIFIERA H1 TILL H4 */
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2.00rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.50rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+/* TILL FÖR ATT TA BORT UNDERLINE PÅ ICONER */
+.telefonnr a,
+.adressinfo a {
+    text-decoration: none;
+}
+
+
+
+/* ALLT SOM LIGGER I HEADER / INFO */
+nav {
+    top: 0;
+    background-color: #ffffffe1;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    display: flex;
+    text-align: center;
+}
+
+nav ul li a {
+    /* display: block; */
+    color: #000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 12px !important;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    margin: 1rem !important;
+    padding: 1rem !important;
+}
+.sticky a {
+    font-size: 2rem !important;
+    text-align: center;
+}
+
+header {
+    background-image: url(/img/hotelimage.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 1rem !important;
+}
+
+/* IKONERNA FÖR INFORUTAN */
+.fi {
+    font-size: 1.9rem;
+    display: block;
+}
+
+header h1 {
+    display: inline;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.telefonnr p i {
+    font-size: 0.85rem;
+}
+
+.oppetdagar {
+    font-weight: bold;
+}
+
+.adressinfo,
+.telefonnr,
+.oppettider {
+    max-width: 220px;
+    min-height: 140px;
+    background-color: #ffffffe1;
+    padding: 1rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dagenslunch {
+    min-width: 320px;
+    min-height: 140px;
+    background-color: #ffffffe1;
+    padding: 2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.oppettider p {
+    display: inline;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+/* DAGENS LUNCH */
+.dagenslunch p {
+    padding-top: 0rem;
+    margin-top: 0rem;
+}
+
+
+
+
+
+
+
+
+/* ################### */
+/* # TABLE STYLING # */
+/* ################### */
+/* TABLEROW SEPARERARE */
+.bold-txt {
+    font-weight: bold;
+}
+
+table td {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid black !important;
+}
+table td:nth-child(1){
+    padding-left: 0.2rem;
+    padding-right: 0.4rem;
+}
+table h3 {
+    padding-top: 8rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* EXEMPEL FÖR TO TOP KNAPP */
+.go-top {
+    position: fixed !important;
+    right: 20px;
+    bottom: -45px;
+    color: #fff;
+    display: block;
+    line-height: 1;
+    text-align: center;
+    padding: 15px;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+
+/*#################### MEDIA QUERY's ########################*/
+@media (min-width: 700px) {
+    .info {
+        display: flex;
+    }
+
+    .info div {
+        min-width: 200px;
+        min-height: 140px;
+    }
+}
+
+@media (min-width: 840px) {
+    body {
+        max-width: 840px;
+        margin: 0 auto;
+        border: 1px solid #dcdcdc;
+        padding: 20px;
+    }
+}
