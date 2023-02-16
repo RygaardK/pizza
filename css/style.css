@@ -2,12 +2,24 @@
     font-size: 16px;
     color: #000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(246, 246, 246);
+}
+body{
+    background-color: white;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem !important;
+}
 /* TILL FÖR ATT MODIFIERA H1 TILL H4 */
 h1 {
     font-size: 2.25rem;
@@ -35,69 +47,70 @@ h5 {
     text-decoration: none;
 }
 
-
-
-/* ALLT SOM LIGGER I HEADER / INFO */
 nav {
-    top: 0;
-    background-color: #ffffffe1;
-    color: #000;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0 !important;
-    padding: 0 !important;
     overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-    display: flex;
-    text-align: center;
-}
-
-nav ul li a {
-    /* display: block; */
+    background-color: #fffffff2;
     color: #000;
-    font-weight: bold;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 10px 12px !important;
-    text-decoration: none;
-}
+    position: sticky !important;
+    top: 0 !important;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  nav #myLinks {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 1.25rem;
+  }
+  
+  /* Style navigation menu links */
+  nav a {
 
-.sticky {
-    position: fixed;
-    top: 0;
-    margin: 1rem !important;
-    padding: 1rem !important;
-}
-.sticky a {
-    font-size: 2rem !important;
-    text-align: center;
-}
+    color: black;
+    padding: 0.4rem 1rem 0.3rem 1rem !important;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+  }
+  
+  /* Style the hamburger menu */
+  nav a.icon {
+    display: inline;
+    position: absolute;
+    right: 0 !important;
+    top: 0 !important;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  nav #myLinks a:hover {
+border-bottom: 0.1rem dotted black;
+    }
+    nav #myLinks a:active {
+        border-bottom: 0.1rem dotted black;
+    }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    color: red !important;
+    font-weight: bold !important;
+    text-shadow: 0.15rem 0.15rem 0.2rem #0000007b;
+    font-size: 1.8rem !important;
+  }
+  .active a:hover {
+    font-weight: bolder;
+  }
 
 header {
     background-image: url(/img/hotelimage.jpg);
-    background-attachment:scroll;
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    padding: 1rem !important;
+    background-size: auto;
+    padding: auto !important;
 }
 
 /* IKONERNA FÖR INFORUTAN */
 .fi {
     font-size: 1.9rem;
     display: block;
-}
-
-header h1 {
-    display: inline;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 .telefonnr p i {
@@ -126,7 +139,8 @@ header h1 {
 }
 
 .dagenslunch {
-    min-width: 320px;
+    min-width: 250px;
+    max-width: 400px;
     min-height: 140px;
     background-color: #ffffffe1;
     padding: 2rem !important;
@@ -172,42 +186,27 @@ table td {
     padding-bottom: 0.3rem;
     border-bottom: 2px solid black !important;
 }
-table td:nth-child(1){
-    padding-left: 0.2rem;
+table td:nth-child(0){
     padding-right: 0.4rem;
 }
-table h3 {
+table td:nth-last-child() p {
+    text-align: right !important;
+    
+}
+
+main h3 {
     padding-top: 8rem;
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-
-/* EXEMPEL FÖR TO TOP KNAPP */
-.go-top {
-    position: fixed !important;
-    right: 20px;
-    bottom: -45px;
-    color: #fff;
-    display: block;
-    line-height: 1;
-    text-align: center;
-    padding: 15px;
-    visibility: hidden;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-    z-index: 9999;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 2px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s
+footer {
+    margin-top: 5rem;
 }
-
 
 /*#################### MEDIA QUERY's ########################*/
 @media (min-width: 700px) {
