@@ -11,7 +11,8 @@ html {
     scroll-behavior: smooth;
     background-color: rgb(246, 246, 246);
 }
-body{
+
+body {
     background-color: white;
     min-height: 100vh;
     box-sizing: border-box;
@@ -20,6 +21,7 @@ body{
 header {
     padding: 1rem !important;
 }
+
 /* TILL FÖR ATT MODIFIERA H1 TILL H4 */
 h1 {
     font-size: 2.25rem;
@@ -41,7 +43,6 @@ h5 {
     font-size: 1.25rem;
 }
 
-/* TILL FÖR ATT TA BORT UNDERLINE PÅ ICONER */
 .telefonnr a,
 .adressinfo a {
     text-decoration: none;
@@ -53,53 +54,54 @@ nav {
     color: #000;
     position: sticky !important;
     top: 0 !important;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  nav #myLinks {
-    display: none;
+}
+
+nav #myLinks {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     min-height: 1.25rem;
-  }
-  
-  /* Style navigation menu links */
-  nav a {
+}
+
+/* Style navigation menu links */
+nav a {
 
     color: black;
     padding: 0.4rem 1rem 0.3rem 1rem !important;
     text-decoration: none;
     font-size: 17px;
     display: flex;
-  }
-  
-  /* Style the hamburger menu */
-  nav a.icon {
+}
+
+/* Style the hamburger icon */
+nav a.icon {
     display: inline;
     position: absolute;
     font-size: 1.5rem;
     right: 0 !important;
     top: 0 !important;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  nav #myLinks a:hover {
-border-bottom: 0.1rem dotted black;
-    }
-    nav #myLinks a:active {
-        border-bottom: 0.1rem dotted black;
-    }
-  
-  /* Style the active link (or home/logo) */
-  .active {
+}
+
+/* Add a background color on mouse-over */
+nav #myLinks a:hover {
+    border-bottom: 0.1rem dotted black;
+}
+
+/* active link */
+nav #myLinks a:active {
+    border-bottom: 0.1rem dotted black;
+}
+
+.active {
     color: red !important;
     font-weight: bold !important;
     text-shadow: 0.15rem 0.15rem 0.2rem #0000007b;
     font-size: 1.8rem !important;
-  }
-  .active a:hover {
+}
+
+.active a:hover {
     font-weight: bolder;
-  }
+}
 
 header {
     background-image: url(/img/hotelimage.jpg);
@@ -173,7 +175,6 @@ div.oppettider p {
 
 
 
-
 /* ################### */
 /* # TABLE STYLING # */
 /* ################### */
@@ -185,18 +186,22 @@ div.oppettider p {
 table td {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid black;
 }
-table td:nth-child(0){
+
+table td:nth-child(0) {
     padding-right: 0.4rem;
 }
-table td:nth-last-child() p {
+
+table td:nth-last-child(2) p {
     text-align: right !important;
-    
+
 }
+
 table td {
     font-size: 0.8rem;
 }
+
 /* TARGET PÅ NAMNET PÅ PIZZA */
 table td:nth-child(2) {
     padding-left: 0.2rem !important;
@@ -211,14 +216,19 @@ table {
     border-spacing: 0;
 }
 
+div h5 {
+    margin-top: 1rem !important;
+}
 
 .headerTextWithParagraph {
     padding-top: 8rem;
     display: flex;
 }
+
 .headerTextWithParagraph h3 {
     align-self: flex-end;
 }
+
 .headerTextWithParagraph p {
     padding: 0rem 0rem 0.4rem 1rem !important;
     align-self: flex-end;
