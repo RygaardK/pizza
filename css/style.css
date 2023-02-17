@@ -104,7 +104,7 @@ nav #myLinks a:active {
 }
 
 header {
-    background-image: url(/img/hotelimage.jpg);
+    background-image: url(../img/hotelimage.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     padding: auto !important;
