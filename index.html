@@ -8,7 +8,6 @@
     <title>Kungs Pizza</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/imports.css">
-    <script src="/js/scripts.js"></script>
     <!-- MADE FOR 350px minimum viewport -->
 </head>
 
@@ -23,7 +22,7 @@
             <a href="#pasta">PASTA</a>
             <a href="#tillbehor">TILLBEHÖR</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="showMyBurger()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
@@ -916,13 +915,13 @@
     </main>
     <footer>
         <div class="info">
-            <div class="adressinfo">
-                <a href="https://www.google.com/maps/place/L%C3%A5ngedragsv%C3%A4gen+102,+426+74+V%C3%A4stra+Fr%C3%B6lunda/"
-                    target="_blank">
-                    <i class="fi fi-sr-map-marker"></i>
-                </a>
-                <p class="bold-txt">Adress</p>
-                <p>Långedragsvägen 102</br>426 74 Västra Frölunda</p>
+            <div class="oppettider">
+                <i class="fi fi-sr-clock-five"></i>
+                <p class="bold-txt">Öppettider</p><br>
+                <p class="oppetdagar">Mån - Fre:</p>
+                <p class="p-oppettider">11 - 21</p><br>
+                <p class="oppetdagar">Lör - Sön:</p>
+                <p class="p-oppettider">12 - 21</p>
             </div>
             <div class="telefonnr">
                 <a href="callto:+4631294747">
@@ -932,16 +931,26 @@
                 <p>031-294747</p>
                 <p><i>Klicka på ikonen ovan, för att ringa.</i></p>
             </div>
-            <div class="oppettider">
-                <i class="fi fi-sr-clock-five"></i>
-                <p class="bold-txt">Öppettider</p><br>
-                <p class="oppetdagar">Mån - Fre:</p>
-                <p class="p-oppettider">11 - 21</p><br>
-                <p class="oppetdagar">Lör - Sön:</p>
-                <p class="p-oppettider">12 - 21</p>
+            <div class="adressinfo">
+                <a href="https://www.google.com/maps/place/L%C3%A5ngedragsv%C3%A4gen+102,+426+74+V%C3%A4stra+Fr%C3%B6lunda/"
+                    target="_blank">
+                    <i class="fi fi-sr-map-marker"></i>
+                </a>
+                <p class="bold-txt">Adress</p>
+                <p>Långedragsvägen 102</br>426 74 Västra Frölunda</p>
             </div>
         </div>
+        <div class="dagenslunch">
+            <i class="fi fi-sr-utensils"></i>
+            <h5>Dagens Lunch 119:-</h5>
+            <p><b>Serveras vardagar:</b> 11 - 14</p>
+            <p>Valfri pizza mellan nr: 1-27, Alla Sallader, Kebaber, Pasta rätter samt sallads buffe, bröd, smör,
+                läsk,
+                och
+                kaffe ingår.</p>
+        </div>
     </footer>
+    <script src="/js/scripts.js" defer></script>
 </body>
 
 </html>
